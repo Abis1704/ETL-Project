@@ -1,4 +1,4 @@
-# ETL Project
+# Banks Project
 Identify the top 10 largest banks globally based on market capitalization (in billion USD). Convert these values into GBP, EUR, and INR using the exchange rates provided in a CSV file. Store the transformed data in both CSV format and as a database table for future reference.
 
 ## Step by Step approach
