@@ -4,23 +4,6 @@
 
 As a data engineer for a research organization, your task is to create an automated system to compile and transform data for the top 10 largest banks globally ranked by market capitalization (in billion USD). The data must be converted into GBP, EUR, and INR using exchange rate information from a CSV file. The processed data will be stored both locally in a CSV file and in a database table for future reference. The system is designed for execution every financial quarter to generate reports.
 
-## Features
-• Extracts the top 10 largest banks ranked by market capitalization from a provided URL.
-
-• Converts market capitalization values into GBP, EUR, and INR based on exchange rates from a CSV file.
-
-• Stores the transformed data in a CSV file and a database table.
-
-• Logs progress at different stages of execution.
-
-• Executes SQL queries to:
-
-• Retrieve all bank data.
-
-• Compute the average market capitalization in GBP.
-
-• Select the top 5 largest banks.
-
 ## Project Structure
 ```
 📁 banks_project
@@ -32,8 +15,20 @@ As a data engineer for a research organization, your task is to create an automa
 │── README.md                 # Documentation
 
 ```
+## Setup Instructions
+### Prerequisites
+    • Python 3.x
+    • Libraries: pandas, requests, BeautifulSoup4, sqlite3
+### Running the Project
+    1.Extract bank data
+    2.Transform the extracted data
+    3.Store the transformed data in CSV format
+    4.Load data into the database
+    5.Run queries on the database
+    6.Check the log file for progress tracking
 
 
+## Task Breakdown:
 ### 1. Implementing logging function- 
     • Ensure each log entry records timestamps and descriptions of the process.
 
@@ -60,4 +55,9 @@ As a data engineer for a research organization, your task is to create an automa
 ### 6.  Run Queries on the Database
     • Write and execute SQL queries to analyze the stored data.
     • Retrieve specific insights such as the largest bank by market capitalization.
-    
+
+## Contributing
+If you would like to contribute to this project, feel free to fork the repository and submit a pull request.
+
+## License
+This project is licensed under the MIT License.
