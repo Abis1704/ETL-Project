@@ -1,7 +1,38 @@
-# Banks Project
-Identify the top 10 largest banks globally based on market capitalization (in billion USD). Convert these values into GBP, EUR, and INR using the exchange rates provided in a CSV file. Store the transformed data in both CSV format and as a database table for future reference.
+# Largest Banks Market Capitalization Analysis
 
-## Step by Step approach
+## Project Overview
+
+As a data engineer for a research organization, your task is to create an automated system to compile and transform data for the top 10 largest banks globally ranked by market capitalization (in billion USD). The data must be converted into GBP, EUR, and INR using exchange rate information from a CSV file. The processed data will be stored both locally in a CSV file and in a database table for future reference. The system is designed for execution every financial quarter to generate reports.
+
+## Features
+• Extracts the top 10 largest banks ranked by market capitalization from a provided URL.
+
+• Converts market capitalization values into GBP, EUR, and INR based on exchange rates from a CSV file.
+
+• Stores the transformed data in a CSV file and a database table.
+
+• Logs progress at different stages of execution.
+
+• Executes SQL queries to:
+
+• Retrieve all bank data.
+
+• Compute the average market capitalization in GBP.
+
+• Select the top 5 largest banks.
+
+## Project Structure
+```
+📁 banks_project
+│── banks_project.py          # Main Python script
+│── exchange_rate.csv         # Exchange rate dataset (downloaded)
+│── Largest_banks_data.csv    # Processed output file
+│── Banks.db                  # SQLite database file
+│── code_log.txt              # Log file
+│── README.md                 # Documentation
+
+```
+
 
 ### 1. Implementing logging function- 
     • Ensure each log entry records timestamps and descriptions of the process.
